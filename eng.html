@@ -3,27 +3,66 @@
 <head>
   <title>Inroduce Myself-TeAr</title>
   <meta charset="utf-8">
+  <style>
+  h1{
+    font-size: 35px;
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+    margin: 0px;
+  }
+  a{
+    color:black;
+    text-decoration: none;
+  }
+  iframe{
+    display: inline-block;
+  }
+  .now{
+    color:gray;
+  }
+  #main_gird{
+    display: grid;
+    grid-template-columns: 150px 1fr;
+  }
+  #main_gird ul{
+    border-right: 1px solid black;
+    margin: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    display: inline-block;
+  }
+  #main_gird #produce{
+    padding-left: 16px;
+
+  }
+  </style>
 </head>
 
 <body>
   <h1>Introduce TeAr</h1>
-  <ul>
-    <li>English</li>
-    <li><a href="kor.html" title="한국어">한국어</a></li>
-  </ul>
-  <p>
-    Hello, I'm TeAr.<br>
-    I'm students of Chung-Ang University software major.<br>
-    My fevorite programming language is C++.<br>
-    I want to learn C#, and python, and web programming.<br>
-    And, I want to be a game developer.<br>
-    So I has studied Unity occasionally.<br>
-  </p>
-  <p>
-    This list is my works list that I can show everyone.<br>
-    Although now I can't make something good yet, I want to make something to show everyone someday.<br>
-  </p>
-  <p>
-    <iframe src="schedule.html" frameborder="0" scrolling="no" width="100%">This browser dosen't support iframe</iframe>
-  </p>
+  <div id="main_gird">
+    <ul>
+      <li><a href="eng.html" title="English" class="now">English</a></li>
+      <li><a href="kor.html" title="한국어">한국어</a></li>
+    </ul>
+    <div id="produce">
+      <p>
+        Hello, I'm TeAr.<br>
+        I'm students of Chung-Ang University software major.<br>
+        My fevorite programming language is C++.<br>
+        I want to learn C#, and python, and web programming.<br>
+        And, I want to be a game developer.<br>
+        So I has studied Unity occasionally.<br>
+      </p>
+      <p>
+        This list is my works list that I can show everyone.<br>
+        Although now I can't make something good yet, I want to make something to show everyone someday.<br>
+      </p>
+      <p>
+        <iframe src="schedule.html" frameborder="0" scrolling="no" width="650px">This browser dosen't support iframe</iframe>
+      </p>
+    </div>
+  </div>
 </body>
