@@ -7,9 +7,9 @@
   h1{
     font-size: 35px;
     text-align: center;
-    border-bottom: 1px solid black;
     padding-bottom: 10px;
     margin: 0px;
+    border-bottom: 1px solid black;
   }
   a{
     color:black;
@@ -21,21 +21,22 @@
   .now{
     color:gray;
   }
-  #main_gird{
-    display: grid;
-    grid-template-columns: 150px 1fr;
-  }
-  #main_gird ul{
-    border-right: 1px solid black;
-    margin: 0px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 20px;
-    display: inline-block;
-  }
-  #main_gird #produce{
-    padding-left: 16px;
-
+  @media(min-width:800px){
+    #main_gird{
+      display: grid;
+      grid-template-columns: 150px 1fr;
+    }
+    #main_gird ul{
+      border-right: 1px solid black;
+      margin: 0px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-right: 20px;
+      display: inline-block;
+    }
+    #main_gird #produce{
+      padding-left: 16px;
+    }
   }
   </style>
 </head>
