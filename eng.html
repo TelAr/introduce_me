@@ -14,26 +14,34 @@
         <li><a href="eng.html" title="English" class="now">English</a></li>
         <li><a href="kor.html" title="한국어">한국어</a></li>
       </ul>
-      <input type="button" name="night" value="야간" onclick="
-      document.querySelector('body').style.backgroundColor ='black';
-      document.querySelector('body').style.color ='gray';
-      var allLink=document.querySelectorAll('a');
-      for( var i=0;i<allLink.length;i++)
-      {
-        allLink[i].style.color='#444444';
-      }
-      document.querySelector('.now').style.color ='#888888';
-      ">
-      <input type="button" name="day" value="주간" onclick="
-      document.querySelector('body').style.backgroundColor ='white';
-      document.querySelector('body').style.color ='black';
-      var allLink=document.querySelectorAll('a');
-      for( var i=0;i<allLink.length;i++)
-      {
-        allLink[i].style.color='black';
-      }
-      document.querySelector('.now').style.color ='#888888';
-      ">
+      <div id="buton_set">
+        <input id="switch_button" type="button" name="switch_color" value="Night" onclick="
+          if(document.querySelector('#switch_button').value ==='Night')
+          {
+            document.querySelector('body').style.backgroundColor ='black';
+            document.querySelector('body').style.color ='gray';
+            var allLink=document.querySelectorAll('a');
+            for( var i=0;i<allLink.length;i++)
+            {
+              allLink[i].style.color='#444444';
+            }
+            document.querySelector('.now').style.color ='#888888';
+            document.querySelector('#switch_button').value='Day';
+          }
+          else
+          {
+            document.querySelector('body').style.backgroundColor ='white';
+            document.querySelector('body').style.color ='black';
+            var allLink=document.querySelectorAll('a');
+            for( var i=0;i<allLink.length;i++)
+            {
+              allLink[i].style.color='black';
+            }
+            document.querySelector('.now').style.color ='#888888';
+            document.querySelector('#switch_button').value='Night';
+          }
+        ">
+      </div>
     </div>
     <div id="produce">
       <p>
