@@ -17,12 +17,22 @@
       <input type="button" name="night" value="야간" onclick="
       document.querySelector('body').style.backgroundColor ='black';
       document.querySelector('body').style.color ='gray';
-      document.querySelector('a').style.color ='#444444';
+      var allLink=document.querySelectorAll('a');
+      for( var i=0;i<allLink.length;i++)
+      {
+        allLink[i].style.color='#444444';
+      }
+      document.querySelector('.now').style.color ='#888888';
       ">
       <input type="button" name="day" value="주간" onclick="
       document.querySelector('body').style.backgroundColor ='white';
       document.querySelector('body').style.color ='black';
-      document.querySelector('a').style.color ='black';
+      var allLink=document.querySelectorAll('a');
+      for( var i=0;i<allLink.length;i++)
+      {
+        allLink[i].style.color='black';
+      }
+      document.querySelector('.now').style.color ='#888888';
       ">
     </div>
     <div id="produce">
