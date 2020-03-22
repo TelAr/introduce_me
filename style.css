@@ -3,7 +3,7 @@ h1{
   text-align: center;
   padding-bottom: 10px;
   margin: 0px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid gray;
 }
 a{
   color:black;
@@ -21,7 +21,7 @@ iframe{
     grid-template-columns: 150px 1fr;
   }
   #main_gird #left_side{
-    border-right: 1px solid black;
+    border-right: 1px solid gray;
     margin: 0px;
     padding-top: 10px;
     padding-bottom: 10px;

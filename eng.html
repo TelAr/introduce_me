@@ -14,8 +14,16 @@
         <li><a href="eng.html" title="English" class="now">English</a></li>
         <li><a href="kor.html" title="한국어">한국어</a></li>
       </ul>
-      <input type="button" name="night" value="Night">
-      <input type="button" name="day" value="Day">
+      <input type="button" name="night" value="Night" onclick="
+      document.querySelector('body').style.backgroundColor ='black';
+      document.querySelector('body').style.color ='gray';
+      document.querySelector('a').style.color ='#444444';
+      ">
+      <input type="button" name="day" value="Day" onclick="
+      document.querySelector('body').style.backgroundColor ='white';
+      document.querySelector('body').style.color ='black';
+      document.querySelector('a').style.color ='black';
+      ">
     </div>
     <div id="produce">
       <p>
