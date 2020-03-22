@@ -20,7 +20,7 @@ iframe{
     display: grid;
     grid-template-columns: 150px 1fr;
   }
-  #main_gird ul{
+  #main_gird #left_side{
     border-right: 1px solid black;
     margin: 0px;
     padding-top: 10px;
