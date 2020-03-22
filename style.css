@@ -26,7 +26,11 @@ iframe{
     padding-top: 10px;
     padding-bottom: 10px;
     padding-right: 20px;
+    padding-left: 20px;
     display: inline-block;
+  }
+  #main_gird #left_side ul{
+    padding-left: 20px;
   }
   #main_gird #produce{
     padding-left: 16px;
