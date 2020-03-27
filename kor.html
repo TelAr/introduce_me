@@ -16,31 +16,28 @@
       </ul>
       <div id="buton_set">
         <input id="switch_button" type="button" name="switch_color" value="Night" onclick="
-          if(document.querySelector('#switch_button').value ==='Night')
-          {
-            document.querySelector('body').style.backgroundColor ='black';
-            document.querySelector('body').style.color ='gray';
-            var allLink=document.querySelectorAll('a');
-            for( var i=0;i<allLink.length;i++)
-            {
-              allLink[i].style.color='#444444';
-            }
-            document.querySelector('.now').style.color ='#888888';
-            document.querySelector('#switch_button').value='Day';
-          }
-          else
-          {
-            document.querySelector('body').style.backgroundColor ='white';
-            document.querySelector('body').style.color ='black';
-            var allLink=document.querySelectorAll('a');
-            for( var i=0;i<allLink.length;i++)
-            {
-              allLink[i].style.color='black';
-            }
-            document.querySelector('.now').style.color ='#888888';
-            document.querySelector('#switch_button').value='Night';
-          }
-        ">
+        var body_style=document.querySelector('body').style;
+        var allLink=document.querySelectorAll('a');
+        var link_color;
+        if(this.value ==='Night')
+        {
+          body_style.backgroundColor ='black';
+          body_style.color ='gray';
+          link_color='#666666';
+          this.value='Day';
+        }
+        else
+        {
+          body_style.backgroundColor ='white';
+          body_style.color ='black';
+          link_color='black';
+          this.value='Night';
+        }
+        for(var i=0;i<allLink.length;i++){
+          allLink[i].style.color=link_color;
+        }
+        document.querySelector('.now').style.color ='#888888';
+      ">
       </div>
     </div>
     <div id="produce">
