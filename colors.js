@@ -1,4 +1,4 @@
-//for switch
+
   function switchNightDay(self)
   {
     var body_style=document.querySelector('body').style;
@@ -23,3 +23,4 @@
     }
     document.querySelector('.now').style.color ='#bbbbbb';
   }
+// DEBUG:
